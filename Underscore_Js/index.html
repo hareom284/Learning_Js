@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.0/underscore-min.js"></script>
+</head>
+<body>
+    <script>
+
+       var list = ["Thet Red","Zaw Green","Khine Blue"];
+
+       var logger = function(val)
+       {
+           console.log("name",val.split(" ")[0]);
+           console.log("color",val.split(" ")[1])
+       };
+       _.each(list,logger);
+    </script>
+   
+</body>
+</html>
