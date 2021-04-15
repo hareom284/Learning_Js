@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice Method</title>
+</head>
+<body>
+    <script>
+    let people = ["zaw","hare","om","crush"];
+
+    //delete the first two element in array
+
+    people.splice(0,2);
+
+    console.log(people);
+
+    // insert the first element in array
+
+    people.splice(0,0,"zaw","hare");
+
+    console.log(people);
+    //replacement  element in array
+
+    people.splice(1,1,"win");
+
+    console.log(people);
+   </script>
+</body>
+</html>

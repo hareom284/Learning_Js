@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [1,2,9,11,8,10,7,4,3];
+
+        //every() usage if every number is true
+
+        var check = numbers.every(function(item,index,array)
+        {
+            return item <10;
+        });
+
+        alert(check);
+
+        //some() if some number is true
+
+         check = numbers.some(function(item,index,array)
+        {
+           return item >7;
+        });
+
+        alert(check);
+
+    </script>
+</body>
+</html>

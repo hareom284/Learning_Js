@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var book = {
+            _year : 2004,
+            edition:1
+        };
+        
+        Object.defineProperty(book,"year",{
+            get : function()
+            {
+                return this._year;
+            },
+
+            set : function(getNewDate)
+            {  
+              if(getNewDate >2004)
+              {
+                 this._year = getNewDate;
+
+                 this.edition += getNewDate - 2004;
+              }
+            }
+        });
+
+        console.log(book);
+        book.year = 2007;
+        console.log(book);
+        console.log("The edition of the book is "+book.edition);
+        console.log("Book name"+ book._year);
+    </script>
+</body>
+</html>
