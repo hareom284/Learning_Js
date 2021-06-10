@@ -12,12 +12,23 @@
        // normal for loop
         for(let i=0;i<students.length;i++)
         {
-            console.log(students[i]);
+            greetStudent(students[i]);
         }
         //for of loop
         for(student of students)
         {
-            console.log(student);
+            greetStudent(student);
+        }
+
+        function greetStudent(student)
+        {
+          console.log(student);
+        }
+
+        while(students.length>0)
+        {
+            let student = students.pop();
+            console.log("The"+student);
         }
     </script>
 </body>
